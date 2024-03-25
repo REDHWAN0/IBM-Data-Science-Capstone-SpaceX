@@ -7,7 +7,7 @@
 ## Background
 SpaceX, a leader in the space industry, strives to make space travel affordable for everyone. Its accomplishments include sending spacecraft to the international space station, launching a satellite constellation that provides internet access and sending manned missions to space. SpaceX can do this because the rocket launches are relatively inexpensive ($62 million per launch) due to its novel reuse of the first stage of its Falcon 9 rocket. Other providers, which are not able to reuse the first stage, cost upwards of $165 million each. By determining if the first stage will land, we can determine the price of the launch. To do this, we can use public data and machine learning models to predict whether SpaceX – or a competing company – can reuse the first stage.
 
-## Executive Summary
+# Summary
 The research attempts to identify the factors for a successful rocket landing. To make this determination, the following methodologies where used:
 * **Collect** data using SpaceX REST API and web scraping techniques
 * **Wrangle** data to create success/fail outcome variable
@@ -45,7 +45,7 @@ The research attempts to identify the factors for a successful rocket landing. T
 
 ## Predictive Analytics
 
-## Results
+# Results
 
 ### Exploratory Data Analysis:
 * Launch success has improved over time
@@ -59,11 +59,7 @@ The research attempts to identify the factors for a successful rocket landing. T
 * All models performed similarly on the test set. The decision tree model slightly outperformed when looking at .best_score_
 
 # Conclusion
-* **Model Performance:** The models performed similarly on the test set with the decision tree model slightly outperforming
-* **Equator:** Most of the launch sites are near the equator for an additional natural boost - due to the rotational speed of earth - which helps save the cost of putting in extra fuel and boosters
-* **Coast:** All the launch sites are close to the coast
-* **Launch Success:** Increases over time
-* **KSC LC-39A:** Has the highest success rate among launch sites. Has a 100% success rate for launches less than 5,500 kg 
-* **Orbits:** ES-L1, GEO, HEO, and SSO have a 100% success rate
-* **Payload Mass:** Across all launch sites, the higher the payload mass (kg), the higher the success rate
+* SpaceX does not have a perfect track record of Falcon 9 first stage landing outcomes.
+* SpaceX’s Falcon 9 first stage landing outcomes have been trending towards greater success as more launches are made.
+* The machine learning models can be used to predict future SpaceX Falcon 9 first stage landing outcomes.
 
